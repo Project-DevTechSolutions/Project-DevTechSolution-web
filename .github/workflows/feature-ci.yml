@@ -19,3 +19,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "16.x"
+      - name: Install dependencies (npm)
+        run: npm install 
+      - name: build
+        run: npm run build
+      - name: test
+        run: npm run test
